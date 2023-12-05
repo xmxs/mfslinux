@@ -10,7 +10,8 @@ jobs:
       - name: Update apt cache
         run: sudo apt-get update
       - name: Install dependencies
-        run: sudo apt-get install -y libarchive-tools genisoimage
+        run: sudo apt-get install -y libarchive-tools genisoimage curl
+      - name: Update package info
       - name: Build and verify
         run: sudo make check VERBOSE=1
       - name: Create artifact

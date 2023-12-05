@@ -31,11 +31,13 @@ Simply run make on Linux or gmake on FreeBSD
 1. create mfslinux.iso bootable ISO file on Linux with a different root password:
 
   ```bash
+  bash prepare.sh
   make ROOTPW=testpass
   ```
 
 2. create mfslinux.iso bootable ISO file on FreeBSD with increased verbosity:
 
   ```bash
+  bash prepare.sh
   gmake VERBOSE=1
   ```
